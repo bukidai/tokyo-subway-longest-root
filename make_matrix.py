@@ -29,9 +29,9 @@ def out_matrix(matrix: dict[str:dict[str:int]], path: str) -> None:
 
 
 def main() -> None:
-    edges = pd.read_csv("./resources/toei/edges.csv")
-    sta = pd.read_csv("./resources/toei/sta.csv", index_col=0)
-    out = "./resources/toei/matrix.csv"
+    edges = pd.read_csv("./resources/metro/edges.csv")
+    sta = pd.read_csv("./resources/metro/sta.csv", index_col=0)
+    out = "./resources/metro/matrix.csv"
     matrix = make_matrix(edges, sta)
     out_matrix(matrix, out)
 
